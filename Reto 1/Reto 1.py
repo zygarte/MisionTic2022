@@ -19,5 +19,4 @@ print("monto inicial")
 capital=int(input())
 print("tiempo")
 tiempo=int(input())
-print(CDT(usuario,capital,tiempo))
- 
+print(CDT(usuario,capital,tiempo)) 
