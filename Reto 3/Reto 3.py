@@ -2,9 +2,9 @@ def consultaRegistro(ventas, idProducto):
     #muestra registros encontrados
     if idProducto in ventas:
         for dProducto, pnProducto, cvProducto, sProducto, nComprador, cComprador, fVenta in ventas[idProducto]:
-            print(f"Producto consultado : {idProducto} Descripción {dProducto} #Parte {pnProducto} Cantidad vendida {cvProducto} Stock {sProducto} Comprador {nComprador} Documento {cComprador} Fecha Venta {fVenta}")
+            print(f"Producto consultado : {idProducto}  Descripción  {dProducto}  #Parte  {pnProducto}  Cantidad vendida  {cvProducto}  Stock  {sProducto}  Comprador {nComprador}  Documento  {cComprador}  Fecha Venta  {fVenta}")
     else:
-        print("No hay registro de venta de ese producto")
+        print(f"No hay registro de venta de ese producto")
 
 pass
 
@@ -18,12 +18,6 @@ def AutoPartes(ventas: list):
         ventasTemp[IdProducto].append((dProducto, pnProducto, cvProducto, sProducto, nComprador, cComprador, fVenta))
     return ventasTemp
 pass
-
-
-
-
-
-
 
 
 consultaRegistro(AutoPartes([
