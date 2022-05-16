@@ -34,7 +34,7 @@ type(t2)
 
 t = tuple()
 print(type(t))
-<class 'tuple'>
+#<class 'tuple'>
 
 #Si el argumento es una secuencia (cadena, lista o tupla), el resultado de la 
 #llamada a la tupla es una tupla con los elementos de la secuencia:
@@ -58,15 +58,15 @@ print(t[1:3])
 #Pero si intentas modificar uno de los elementos de la tupla, obtienes un error:
 
 t[0] = 'A'
-"""
----------------------------------------------------------------------------
-TypeError                                 Traceback (most recent call last)
-<ipython-input-17-7e674cdf20e6> in <module>
-----> 1 t[0] = 'A'
+# """
+# ---------------------------------------------------------------------------
+# TypeError                                 Traceback (most recent call last)
+# <ipython-input-17-7e674cdf20e6> in <module>
+# ----> 1 t[0] = 'A'
 
-TypeError: 'tuple' object does not support item assignment
-No se pueden modificar los elementos de una tupla, pero se puede reemplazar una tupla por otra:
-"""
+# TypeError: 'tuple' object does not support item assignment
+# No se pueden modificar los elementos de una tupla, pero se puede reemplazar una tupla por otra:
+# """
 
 t = ('A',) + t[1:]
 print(t)
@@ -120,24 +120,24 @@ for longitud, palabra in l:
     
 print(res)
 
-"""
-El primer bucle construye una lista de tuplas, donde cada tupla es una palabra precedida 
-por su longitud.
+# """
+# El primer bucle construye una lista de tuplas, donde cada tupla es una palabra precedida 
+# por su longitud.
 
-La función sort compara el primer elemento, la longitud, primero, y sólo considera el 
-segundo elemento para romper los empates. El argumento de la palabra clave reverse=True le 
-dice a sort que vaya en orden decreciente.
+# La función sort compara el primer elemento, la longitud, primero, y sólo considera el 
+# segundo elemento para romper los empates. El argumento de la palabra clave reverse=True le 
+# dice a sort que vaya en orden decreciente.
 
-El segundo bucle atraviesa la lista de tuplas y construye una lista de palabras en orden
- descendente de longitud. Las palabras de cuatro caracteres se ordenan en orden alfabético 
- inverso, así que "what" aparece antes de "soft" en la siguiente lista. El resultado del 
- programa es el siguiente:
+# El segundo bucle atraviesa la lista de tuplas y construye una lista de palabras en orden
+#  descendente de longitud. Las palabras de cuatro caracteres se ordenan en orden alfabético 
+#  inverso, así que "what" aparece antes de "soft" en la siguiente lista. El resultado del 
+#  programa es el siguiente:
 
-['yonder', 'window', 'breaks', 'light', 'what', 'soft', 'but', 'in']
+# ['yonder', 'window', 'breaks', 'light', 'what', 'soft', 'but', 'in']
 
-Por supuesto, la línea pierde mucho de su impacto poético cuando se convierte en una lista 
-Python y se ordena en orden descendente de longitud de palabra.
-"""
+# Por supuesto, la línea pierde mucho de su impacto poético cuando se convierte en una lista 
+# Python y se ordena en orden descendente de longitud de palabra.
+# """
 
 #Asignación de tupla
 #Una de las características sintácticas únicas del lenguaje Python es la capacidad de tener
@@ -173,7 +173,7 @@ print(y)
 #Una aplicación particularmente inteligente de la asignación de tupla nos permite intercambiar 
 # los valores de dos variables en una sola declaración:
 
-a, b = b, a
+# a, b = b, a
 
 #Ambos lados de esta declaración son tuplas, pero el lado izquierdo es una tupla de variables;
 # el lado derecho es una tupla de expresiones. Cada valor del lado derecho se asigna a su 
@@ -228,13 +228,13 @@ print(t)
 # desde pares de apellidos y nombres a números de teléfono. Asumiendo que hemos definido las variables 
 # apellido, nombre y número, podríamos escribir una declaración de asignación de diccionario como sigue:
 
-directory[apellido,nombre] = numero
+# directory[apellido,nombre] = numero
 
 #La expresión entre paréntesis es una tupla. Podríamos usar la asignación de la tupla en un bucle de for 
 # para atravesar este diccionario.
 
-for last, first in directory:
-    print(first, last, directory[last,first])
+# for last, first in directory:
+#     print(first, last, directory[last,first])
 
 #Este bucle atraviesa las teclas del directorio, que son tuplas. Asigna los elementos de cada 
 # tupla al último y al primero, y luego imprime el nombre y el número de teléfono correspondiente.
