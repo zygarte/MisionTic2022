@@ -27,7 +27,7 @@ def listaPeliculas(rutaFileCsv: str)-> str:
             # #Se muestra el resultado con la grafica
             # plt.show()
         except:  
-            print(f'Error al leer el archivo de datos.')
+            print(f'Error al leer el archivo de datos. ')
     else:
         print(f'Extensión inválida.')
     return Coleccion.head(10)
